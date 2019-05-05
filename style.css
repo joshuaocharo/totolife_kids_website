@@ -53,6 +53,12 @@ a:hover {
 	width: 1000px;
 	margin: 0px auto;
 }
+video{
+    border: 5px;
+    border-style: solid;
+    border-color: white;
+
+}
 
 /* Header */
 
@@ -69,6 +75,8 @@ a:hover {
 	margin: 0 auto;
 	padding: 0px 0px;
 }
+
+
 
 /* Logo */
 
@@ -451,6 +459,10 @@ a:hover {
 #column3 {
 	float: right;
 	width: 260px;
+}
+#column4 {
+	float: right;
+	width: 560px;
 }
 
 /* Footer */
