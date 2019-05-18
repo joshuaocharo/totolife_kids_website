@@ -1,5 +1,5 @@
 
-<html>
+<html lang="en">
 <head>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
@@ -29,17 +29,17 @@
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <img src="back1.jpg" style="width:100%">
+  <img src="back1.jpg" style="width:100%" alt="">
   <div class="text">Learn The Aplhabet and How It Is Used</div>
 </div>
 
 <div class="mySlides fade">
-  <img src="back2.jpg" style="width:100%">
+  <img src="back2.jpg" style="width:100%" alt="">
   <div class="text">Learn About Numbers and Simple Mathematics</div>
 </div>
 
 <div class="mySlides fade">
-  <img src="back3.jpg" style="width:100%">
+  <img src="back3.jpg" style="width:100%" alt="">
   <div class="text">Learn About Basic Shapes</div>
 </div>
 
@@ -76,8 +76,73 @@ function showSlides() {
 
 	</div>
 
+    <div id="featured-content">
+        <div id="column1">
+            <h2>The Alphabet</h2>
+            <p><img src="images/img06.jpg" width="300" height="150" alt="" /></p>
+
+
+            <p>Learn the alphabet easily and fast!</p>
+            <audio src="" controls id="audioPlayer1">
+                Sorry, your browser doesn't support html5!
+            </audio>
+            <ul  id="playlist1">
+                <li class="current-song"><a href="songs/Abc%20Songs%20-%20Best%20Children's%20Song.mp3">ABC Song</a></li>
+                <li><a href="songs/The%20Alphabet%20Song%20-%20Lower%20Case%20ABC%20Songs.mp3">The Alphabet Song</a> </li>
+            </ul>
+            <!--<p class="button"><a href="alphabet.html">Let's Go!</a></p>-->
+            <!--<p class="button"><a href="alphabet.html">Songs</a> </p>-->
+
+        </div>
+        <div id="column2">
+            <h2>Numbers</h2>
+            <p><img src="images/img07.jpg" width="300" height="150" alt="" /></p>
+            <p>Know numbers and get to play with them!</p>
+            <audio src="" controls id="audioPlayer2">
+                Sorry, your browser doesn't support html5!
+            </audio>
+            <ul  id="playlist2">
+                <li class="current-song"><a href="songs/Numbers%20Song%201%20-%2010%20Children%20Songs.mp3">Number Song</a> </li>
+                <li><a href="songs/Dream%20English%20Lets%20Count%201%20to%201001.mp3">Lets Count</a></li>
+            </ul>
+            <!--<p class="button"><a href="numbers.html">Let's Go!</a></p>
+            <p class="button"><a href="alphabet.html">Songs</a> </p>-->
+        </div>
+        <div id="column3">
+            <h2>Shapes</h2>
+            <p><img src="images/img08.jpg" width="300" height="150" alt="" /></p>
+            <p>Have fun with shapes!</p>
+            <audio src="" controls id="audioPlayer3">
+                Sorry, your browser doesn't support html5!
+            </audio>
+            <ul  id="playlist3">
+                <li class="current-song"><a href="songs/shapesong.mp3">Shapes Song</a></li>
+                <li><a href="songs/Shapes%20Song%20-%2031%20Kids%20Songs.mp3">Shapes Song - 31 Kids Song </a> </li>
+            </ul>
+            <!--<p class="button"><a href="shapes.html">Let's Go!</a></p>
+            <p class="button"><a href="alphabet.html">Songs</a> </p>-->
+
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="audioPlayer.js"></script>
+    <script>
+        audioPlayer1();
+        audioPlayer2();
+        audioPlayer3();
+        document.addEventListener('play', function(e){
+            var audios = document.getElementsByTagName('audio');
+            for (var i =0, len= audios.length;i<len;i++){
+                if(audios[i] !== e.target){
+                    audios[i].pause();
+                }
+            }
+        }, true);
+    </script>
+
 <div id="footer">
 	<p>&copy; TotoLife. All rights reserved. 2019.</p>
+</div>
 </div>
 <!-- end #footer -->
 </body>

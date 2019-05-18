@@ -675,3 +675,12 @@ ul.style1 .first {
 	text-align: center;
 	text-decoration: none;
 }
+#playlist1, #playlist2, #playlist3{
+	list-style:-moz-bengali;
+}
+#playlist1 li a, #playlist2 li a, #playlist3 li a{
+	text-decoration: none;
+}
+#playlist1.current-song a, #playlist2.current-song a, #playlist3.current-song a{
+	color: blue;
+}
