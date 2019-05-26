@@ -161,6 +161,11 @@ video{
 	height: 600px;
 	background: url(images/img01.jpg) repeat;
 }
+#header-wrapper1 {
+	overflow: hidden;
+	height: 1400px;
+	background: url(images/img01.jpg) repeat;
+}
 
 #header {
 	overflow: hidden;
