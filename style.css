@@ -164,8 +164,18 @@ video{
 }
 #header-wrapper1 {
 	overflow: hidden;
+<<<<<<< HEAD
 	height: 1800px;
 	 background: url(images/img01.jpg) repeat;
+=======
+	height: 1600px;
+	background: url(images/img01.jpg) repeat;
+}
+#header-wrapper2 {
+	overflow: hidden;
+	height: 2000px;
+	background: url(images/img01.jpg) repeat;
+>>>>>>> ceac4df845df53788fa1e0b86917674cf06b83a7
 }
 
 
