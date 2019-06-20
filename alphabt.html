@@ -2,6 +2,7 @@
 
 <head>
 
+
     <meta name="description" content="" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>TotoLife</title>
@@ -9,7 +10,157 @@
     <link href='http://fonts.googleapis.com/css?family=Abel|Satisfy' rel='stylesheet' type='text/css' />
     <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="font-awesome.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="http://www.yoursite.com/dflip/css/dflip.css" rel="stylesheet" type="text/css">
+
+    <!-- Icons Stylesheet -->
+    <link href="http://www.yoursite.com/dflip/css/themify-icons.css" rel="stylesheet" type="text/css">
+    <script src="http://www.yoursite.com/dflip/js/libs/jquery.min.js" type="text/javascript"></script>
+
+    <!-- Flipbook main Js file -->
+    <script src="http://www.yoursite.com/dflip/js/dflip.min.js" type="text/javascript"></script>
+
+   
+
+
+
+
+
     <style>
+        
+       
+        
+        .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 50%;
+            height: 20%;
+
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            overflow: hidden;
+            font-family: "Luckiest Guy", cursive;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ::selection {}
+
+        /* CLOUDS */
+
+        .header:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            margin: auto;
+            border-radius: 100%;
+
+            display: block;
+
+        }
+
+        /* JUMP */
+
+        h1.header {
+            cursor: default;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            margin: auto;
+            display: block;
+            text-align: center;
+        }
+
+        h1 span {
+            position: relative;
+            top: 20px;
+            display: inline-block;
+            -webkit-animation: bounce 0.3s ease infinite alternate;
+            font-size: 80px;
+            color: antiquewhite;
+            text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+            0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+            0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 span:nth-child(2) {
+            -webkit-animation-delay: 0.1s;
+        }
+
+        h1 span:nth-child(3) {
+            -webkit-animation-delay: 0.2s;
+        }
+
+        h1 span:nth-child(4) {
+            -webkit-animation-delay: 0.3s;
+        }
+
+        h1 span:nth-child(5) {
+            -webkit-animation-delay: 0.4s;
+        }
+
+        h1 span:nth-child(6) {
+            -webkit-animation-delay: 0.5s;
+        }
+
+        h1 span:nth-child(7) {
+            -webkit-animation-delay: 0.6s;
+        }
+
+        h1 span:nth-child(8) {
+            -webkit-animation-delay: 0.2s;
+        }
+
+        h1 span:nth-child(9) {
+            -webkit-animation-delay: 0.3s;
+        }
+
+        h1 span:nth-child(10) {
+            -webkit-animation-delay: 0.4s;
+        }
+
+        h1 span:nth-child(11) {
+            -webkit-animation-delay: 0.5s;
+        }
+
+        h1 span:nth-child(12) {
+            -webkit-animation-delay: 0.6s;
+        }
+
+        h1 span:nth-child(13) {
+            -webkit-animation-delay: 0.7s;
+        }
+
+        h1 span:nth-child(14) {
+            -webkit-animation-delay: 0.8s;
+        }
+
+        /* ANIMATION */
+
+        @-webkit-keyframes bounce {
+            100% {
+                top: -20px;
+                text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+                0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+                0 50px 25px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        .column1 {
+            padding: 5dp;
+
+        }
+
+
         img {
             border-radius: 10%;
             margin-bottom: 20px;
@@ -30,6 +181,14 @@
             animation: shake 0.5s;
             animation-iteration-count: infinite;
         }
+
+
+
+        h3 {
+            font-family: cursive;
+            color: green;
+        }
+
 
         @keyframes shake {
             0% {
@@ -66,98 +225,210 @@
                 transform: translate(1px, -2px) rotate(-1deg);
             }
         }
+        
+
+
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
+        :root {
+    --color-bg: #34304c;
+    --color-bg2: #534d7a;
+    --color-highlight: #fff;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.goo {
+    font-size: 3rem;
+    line-height: 1.35;
+    display: inline;
+    box-decoration-break: clone;
+    background: var(--color-highlight);
+    padding: 0.5rem 1rem;
+    filter: url('#goo');
+}
+
+.goo:focus {
+    outline: 0;
+}
+
+.edit {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--color-bg2);
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--color-highlight);
+    border-radius: 1em;
+}
+
 
     </style>
 </head>
 
 <body>
+    <div class="header">
+
+        <h1>
+            <span>T</span>
+            <span>o</span>
+            <span>T</span>
+            <span>o</span>
+            <span>L</span>
+            <span>i</span>
+            <span>f</span>
+            <span>e</span>
+        </h1>
+
+
+    </div>
+
     <div id="wrapper">
         <div id="header-wrapper1">
+
             <div id="header" class="container">
+
+
+                <p></p>
                 <div id="logo">
-                    <h1><a href="#">TotoLife</a></h1>
+
 
                 </div>
-
-
                 <div id="menu">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li class="current_page_item"><a href="index.html">Home</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <p></p>
-                <div id="logo">
-                    <img src="images/g1.png" border-radius="0%">
 
-                </div>
 
                 <!--embedded video-->
 
             </div>
             <div id="featured-content">
-                <div id="column2">
+                <div id="intro">
+                    <h3>
+                        <img src="images/g1.png">
+                    </h3>
+
+                </div>
 
 
+
+                <div id="column1">
                     <video width="420" height="240" padding="10px" controls>
   <source src="video/alphabets.mp4" type="video/mp4">
   <source src="video/alphabets.mp4" type="video/ogg">
+   
                     
 
 </video>
-                    <p></p>
-                    <p></p>
+                    <h2 style="#">Alphabets for kids</h2>
+
+                </div>
+
+                <div id="column4">
                     <video width="420" height="240" padding="10px" controls>
   <source src="video/abc-song_Trim.mp4" type="video/mp4">
   <source src="video/abc-song_Trim.mp4" type="video/ogg">
 
 </video>
-                    <p></p>
-                    <p></p>
+                    <h2 style="color: firebrick">Fun abc Songs</h2>
+
+                </div>
+                <div id="column1">
                     <video width="420" height="240" padding="10px" controls>
   <source src="video/abc-nurseryrhymesedited.mp4" type="video/mp4">
   <source src="video/abc-nurseryrhymesedited.mp4" type="video/ogg">
-
+  
 </video>
-                    <p></p>
-                    <p></p>
+                    <h2 style="#">Fun abc Nursery Rhymes</h2>
+                </div>
+                <div id="column4">
                     <video width="420" height="240" padding="10px" controls>
   <source src="video/lets-sing.mp4" type="video/mp4">
   <source src="video/lets-sing.mp4" type="video/ogg">
-
+   <h2 style="color:firebrick">Come lets Sing</h2>
 </video>
-
+                    <h2 style="color:firebrick">Come lets Sing</h2>
                 </div>
-                <div id="column4">
-                    <h1 style="#">Alphabets for kids</h1>
-                    <p><img src="images/img09.jpg" width="200" height="150" alt="" /></p>
+               
 
-                    <p></p>
-                    <h1 style="color: firebrick">Fun abc Songs</h1>
+
+             <!--   <div id="column1">
+
                     <p><img src="images/abc-song.jpg" width="200" height="150" alt="" /></p>
+                </div>
+                <div id="column2">
 
-                    <p></p>
-                    <h1 style="#">Fun abc Nursery Rhymes</h1>
                     <p><img src="images/rhymes.jpg" width="200" height="150" alt="" /></p>
 
-                    <p></p>
-                    <h1 style="color:firebrick">Come lets Sing</h1>
+                </div>
+                <div id="column3">
+
                     <p><img src="images/img11.jpg" width="200" height="150" alt="" /></p>
-                    <p></p>
 
 
                 </div>
-            
-               <a href="alphabet.html"><img src="images/g2.png" width="" height="" alt="" />
-                </a>
-               
+                <div class="_df_book" height="500" source="books/zoophabet.pdf" id="df_manual_book">
+                </div> -->
+                 
+
             </div>
+            <p></p>
+
+<h1 style="color: dodgerblue">
+    <div class="goo" contenteditable="true">Lets Read Some Fun<br>ABC Books</div>
+</h1>
+
+<!-- Filter: https://css-tricks.com/gooey-effect/ -->
+<svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+        <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+            <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+        </filter>
+    </defs>
+</svg>
+            <p></p>
+            <img src="images/biodiversity.jpg" width="300" height="300"><a href="turnjs4/samples/ABCbiodiversity/index.html"> <div class="edit" style="font-size:1.2rem">Start Reading 
+            </div>   </a>  
+                
+            <div id="column5">
+          <h4> Learn your ABC as you get to learn about different animals.The book <br>Provides a broad spectrum of animals.</h4> 
+    </div>
+            
+            <p></p>
+            
+            
+            
+            
+            
+            
+            
+
+           
+     <a href="alphabet.html"> <div class="edit">Press Me To play A Game
+           
+            </div>   </a>  
+    
+
         </div>
     </div>
+
 
 
 </body>
 
 </html>
+
+

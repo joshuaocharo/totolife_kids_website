@@ -165,7 +165,7 @@ video{
 #header-wrapper1 {
 	overflow: hidden;
 	height: 1800px;
-	background: url(images/img01.jpg) repeat;
+	 background: url(images/img01.jpg) repeat;
 }
 
 
@@ -548,6 +548,11 @@ video{
 
 #column1 {
 	float: left;
+	width: 290px;
+	margin-right: 30px;
+}
+#column5 {
+	float: right;
 	width: 290px;
 	margin-right: 30px;
 }
