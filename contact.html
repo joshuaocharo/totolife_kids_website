@@ -1,13 +1,13 @@
-
-<html>
+<html lang="en">
 <head>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>TotoLife</title>
-<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css' />
-<link href='http://fonts.googleapis.com/css?family=Abel|Satisfy' rel='stylesheet' type='text/css' />
-<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>TotoLife</title>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Abel|Satisfy' rel='stylesheet' type='text/css' />
+	<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
 </head>
 <body>
 <div id="wrapper">
@@ -25,10 +25,52 @@
 				</ul>
 			</div>
 		</div>
-		
+
+		<div id="featured-text">
+			<main>
+				<form class="contact-form" action="contact.php" method="post">
+					<div class="row">
+						<div class="col-25">
+							<label for="name">Full Name:</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="name" name="name" placeholder="Your full name..">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="email">Email:</label>
+						</div>
+						<div class="col-75">
+							<input type="email" id="email" name="email" placeholder="Your email..">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="subject">Subject:</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="subject" name="subject" placeholder="Subject"/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="message">Message:</label>
+						</div>
+						<div class="col-75">
+							<textarea id="message" name="message" placeholder="Your message..."  style="height:150px"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<button class="btn-send" type="submit" name="submit">SEND</button>
+					</div>
+				</form>
+			</main>
+		</div>
+
 	</div>
-	
-	
+
+</div>
 <div id="footer">
 	<p>&copy; TotoLife. All rights reserved. 2019.</p>
 </div>
