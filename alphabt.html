@@ -19,16 +19,13 @@
     <!-- Flipbook main Js file -->
     <script src="http://www.yoursite.com/dflip/js/dflip.min.js" type="text/javascript"></script>
 
-   
+
 
 
 
 
 
     <style>
-        
-       
-        
         .header {
             position: absolute;
             top: 0;
@@ -159,6 +156,10 @@
             padding: 5dp;
 
         }
+        .column4 {
+	float: right;
+	width: 320px;
+}
 
 
         img {
@@ -178,7 +179,7 @@
         }
 
         img:hover {
-            animation: shake 0.5s;
+            animation: shake 1s;
             animation-iteration-count: infinite;
         }
 
@@ -225,50 +226,51 @@
                 transform: translate(1px, -2px) rotate(-1deg);
             }
         }
-        
 
 
 
-@keyframes marquee {
-	from {
-		left: 100%;
-	}
 
-	to {
-		left: -100%;
-	}
-}
+        @keyframes marquee {
+            from {
+                left: 100%;
+            }
+
+            to {
+                left: -100%;
+            }
+        }
+
         :root {
-    --color-bg: #34304c;
-    --color-bg2: #534d7a;
-    --color-highlight: #fff;
-    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
+            --color-bg: #34304c;
+            --color-bg2: #534d7a;
+            --color-highlight: #fff;
+            --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
 
-.goo {
-    font-size: 3rem;
-    line-height: 1.35;
-    display: inline;
-    box-decoration-break: clone;
-    background: var(--color-highlight);
-    padding: 0.5rem 1rem;
-    filter: url('#goo');
-}
+        .goo {
+            font-size: 3rem;
+            line-height: 1.35;
+            display: inline;
+            box-decoration-break: clone;
+            background: var(--color-highlight);
+            padding: 0.5rem 1rem;
+            filter: url('#goo');
+        }
 
-.goo:focus {
-    outline: 0;
-}
+        .goo:focus {
+            outline: 0;
+        }
 
-.edit {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: var(--color-bg2);
-    text-transform: uppercase;
-    font-size: 2rem;
-    color: var(--color-highlight);
-    border-radius: 1em;
-}
+        .edit {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: var(--color-bg2);
+            text-transform: uppercase;
+            font-size: 2rem;
+            color: var(--color-highlight);
+            border-radius: 1em;
 
+        }
 
     </style>
 </head>
@@ -319,6 +321,8 @@
                     <h3>
                         <img src="images/g1.png">
                     </h3>
+                    
+            
 
                 </div>
 
@@ -361,46 +365,28 @@
 </video>
                     <h2 style="color:firebrick">Come lets Sing</h2>
                 </div>
-               
 
 
-             <!--   <div id="column1">
 
-                    <p><img src="images/abc-song.jpg" width="200" height="150" alt="" /></p>
-                </div>
-                <div id="column2">
+                
+<P></P>
 
-                    <p><img src="images/rhymes.jpg" width="200" height="150" alt="" /></p>
-
-                </div>
-                <div id="column3">
-
-                    <p><img src="images/img11.jpg" width="200" height="150" alt="" /></p>
-
-
-                </div>
-<<<<<<< HEAD
-                <div class="_df_book" height="500" source="books/zoophabet.pdf" id="df_manual_book">
-                </div> -->
-                 
-
-=======
+<a href="alphabet.html">
+            <div class="edit">Press Me To Play ABC Game</div>
             
-               <a href="alphabet.html"><img src="images/g2.png" width="" height="" alt="" />
-                </a>
+       </a> 
 
-               <p class="button"><a href="index.html">Back</a></p>
-               
->>>>>>> ceac4df845df53788fa1e0b86917674cf06b83a7
             </div>
+            
+            
             <p></p>
 
-<h1 style="color: dodgerblue">
-    <div class="goo" contenteditable="true">Lets Read Some Fun<br>ABC Books</div>
-</h1>
+            <h1 style="color: dodgerblue">
+                <div class="goo" contenteditable="true">Lets Read Some Fun<br>ABC Books</div>
+            </h1>
 
-<!-- Filter: https://css-tricks.com/gooey-effect/ -->
-<svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <!-- Filter: https://css-tricks.com/gooey-effect/ -->
+            <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
     <defs>
         <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
             <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
@@ -408,39 +394,73 @@
         </filter>
     </defs>
 </svg>
-            <p></p>
-            <img src="images/biodiversity.jpg" width="300" height="300"><a href="turnjs4/samples/ABCbiodiversity/index.html"> <div class="edit" style="font-size:1.2rem">Start Reading 
-            </div>   </a>  
-                
-            <div id="column5">
-          <h4> Learn your ABC as you get to learn about different animals.The book <br>Provides a broad spectrum of animals.</h4> 
-    </div>
-            
-            <p></p>
-            
-            
-            
-            
-            
-            
-            
+            <div id="column1">
 
+                <img src="images/1.png" width="250" height="300">
+                <p>Meet and colour the entire Zoophabet. From Abe and Alice to Zinnia and Zed, these letter-shaped animals will intrigue… </p>
+
+
+                <a href="turnjs4/samples/basic/index.html">
+
+                    <div class="edit" style="font-size:1.2rem">Start Reading
+                    </div>
+                </a>
+
+            </div>
+            <div id="column2">
+                <img src="images/covers.png" width="250" height="300">
+                <p>Feebee McGee goes on an adventure to planet ABC, travelling on her “Terrific Transformable Train” – Tripple T for short, with her camera “Camy”.</p>
+
+
+                <a href="turnjs4/samples/planetabc/index.html">
+
+                    <div class="edit" style="font-size:1.2rem">Start Reading
+                    </div>
+                </a>
+
+
+            </div>
+            <div id="column3">
+                <img src="images/img16.jpg" width="250" height="300">
+                <p>Feebee McGee goes on an adventure to planet ABC, travelling on her “Terrific Transformable Train” – Tripple T for short, with her camera “Camy”.</p>
+
+
+                <a href="turnjs4/samples/planetabc/index.html">
+
+                    <div class="edit" style="font-size:1.2rem">Start Reading
+                    </div>
+                </a>
+
+
+            </div>
+            <div id="column5">
+                <img src="images/covers.png" width="250" height="300">
+                <p>Feebee McGee goes on an adventure to planet ABC,travelling on her “Terrific Transformable Train” – Tripple T for short, with her camera “Camy”.</p>
+
+
+                <a href="turnjs4/samples/planetabc/index.html">
+
+                    <div class="edit" style="font-size:1.2rem">Start Reading
+                    </div>
+                </a>
+
+
+            </div>
+            
            
-     <a href="alphabet.html"> <div class="edit">Press Me To play A Game
-           
-            </div>   </a>  
-    
 
         </div>
+           
+
     </div>
+
+
     <div id="footer">
         <p>&copy; TotoLife. All rights reserved. 2019.</p>
-        </div>
+    </div>
 
 
 
 </body>
 
 </html>
-
-
