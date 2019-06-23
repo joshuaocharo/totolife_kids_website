@@ -1,0 +1,95 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color:#F2E9D5;
+	width:75%;
+	margin:auto;
+}
+.content{
+	background-color:#E3CDA4;
+    margin-top: 2em;
+}
+.message{
+	background-color:#E3CDA4;
+}
+header{
+	font-size:4em;
+	text-align:center;
+	color:#2F343B;
+	background-color:#7E827A;
+	height:2em;
+	padding-top:.2em;
+	padding-bottom:0em;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+h1{
+	font-size:2em;
+	text-align:center;
+	color:#6F2F2F;
+	height:3em;
+	padding-top:1.4em;
+	padding-bottom:0em;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+
+	
+}
+footer{
+	font-size:1em;
+	
+	color:#2F343B;
+	background-color:#7E827A;
+	height:3em;
+	padding:2em;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    float: clear;
+    margin-top: 2em;
+}
+#shapes{
+	width:50%;
+	margin:auto;
+	padding:4em;
+}
+#target_cont{
+    width:80%;
+	margin:auto;
+	padding:8em;
+    margin-bottom: 3em;
+}
+
+.target{
+	width:80%;
+	margin:auto;
+	padding:1em;
+    background-color:#C77966;
+    width:10%;
+    color: black;
+    font-size: 1.4em;
+    text-align:center;
+    border: 5px solid black;
+    float:left;
+}
+.correct{
+    width:80%;
+	margin:auto;
+	padding:1em;
+    background-color: #C77966;
+    width:10%;
+    color: black;
+    font-size: 1.4em;
+    text-align:center;
+    border: 5px solid #284907;
+    float:left;
+}
