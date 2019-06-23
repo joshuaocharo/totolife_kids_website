@@ -1,0 +1,121 @@
+
+body {
+	line-height: 1;
+	background: url(img01.jpg) repeat;
+	width:75%;
+	margin:auto;
+}
+.content{
+	background: url(img01.jpg) repeat;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.message{
+	background-color:#E3CDA4;
+}
+header{
+	font-size:4em;
+	text-align:center;
+	color:#2F343B;
+	background-color:#C77966;
+	height:2em;
+	padding:0;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+h1{
+	font-size:2em;
+	text-align:center;
+	color:#6F2F2F;
+	height:3em;
+	padding-top:1.4em;
+	padding-bottom:0em;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+
+	
+}
+
+#shapes{
+	width:60%;
+	margin-top: 2em;
+    margin-bottom: 2em;
+	padding:0;
+}
+#target_cont{
+    width:80%;
+	margin-top: 2em;
+    margin-bottom: 2em;
+	padding:0;
+    margin-bottom: 3em;
+}
+
+.target{
+	width:80%;
+	margin:0 auto;
+	padding:0;
+    background-color:#C77966;
+    width:10%;
+    color: black;
+    font-size: 1.4em;
+    text-align:center;
+    border: 5px solid black;
+    float:left;
+}
+.correct{
+    width:80%;
+	margin:0 auto;
+	padding:1em;
+    background-color: #C77966;
+    width:10%;
+    color: black;
+    font-size: 1.4em;
+    text-align:center;
+    border: 5px solid #284907;
+    float:left;
+}
+/* Menu */
+
+#menu {
+	float: right;
+	width: 500px;
+	height: 90px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#menu ul {
+	float: right;
+	margin: 0;
+	padding: 50px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+	padding: 0px 0px 0px 0px;
+}
+
+#menu a {
+	display: block;
+	margin-right: 1px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: #12212F;
+	border: none;
+}
+
+#menu a:hover, #menu .current_page_item a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#menu .current_page_item a {
+	background: #132434;
+	border-radius: 5px;
+}
+
