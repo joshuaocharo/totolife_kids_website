@@ -978,7 +978,7 @@ h3 {
 	line-height: 1.35;
 	display: inline;
 	box-decoration-break: clone;
-	background: url("images/img01.jpg");
+	background: var(--color-highlight);
 	padding: 0.5rem 1rem;
 	filter: url('#goo');
 }
