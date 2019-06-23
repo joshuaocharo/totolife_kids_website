@@ -10,6 +10,140 @@
     <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
     <link href="font-awesome.css" rel="stylesheet" type="text/css" media="screen"/>
     <style>
+        body {
+            background: url("images/img01.jpg") repeat;
+        }
+
+        .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 50%;
+            height: 20%;
+
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            overflow: hidden;
+            font-family: "Luckiest Guy", cursive;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ::selection {
+        }
+
+        /* CLOUDS */
+
+        .header:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            margin: auto;
+            border-radius: 100%;
+
+            display: block;
+
+        }
+
+        /* JUMP */
+
+        h1.header {
+            cursor: default;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            margin: auto;
+            display: block;
+            text-align: center;
+        }
+
+        h1 span {
+            position: relative;
+            top: 20px;
+            display: inline-block;
+            -webkit-animation: bounce 0.3s ease infinite alternate;
+            font-size: 80px;
+            color: antiquewhite;
+            text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+            0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+            0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 span:nth-child(2) {
+            -webkit-animation-delay: 0.1s;
+        }
+
+        h1 span:nth-child(3) {
+            -webkit-animation-delay: 0.2s;
+        }
+
+        h1 span:nth-child(4) {
+            -webkit-animation-delay: 0.3s;
+        }
+
+        h1 span:nth-child(5) {
+            -webkit-animation-delay: 0.4s;
+        }
+
+        h1 span:nth-child(6) {
+            -webkit-animation-delay: 0.5s;
+        }
+
+        h1 span:nth-child(7) {
+            -webkit-animation-delay: 0.6s;
+        }
+
+        h1 span:nth-child(8) {
+            -webkit-animation-delay: 0.2s;
+        }
+
+        h1 span:nth-child(9) {
+            -webkit-animation-delay: 0.3s;
+        }
+
+        h1 span:nth-child(10) {
+            -webkit-animation-delay: 0.4s;
+        }
+
+        h1 span:nth-child(11) {
+            -webkit-animation-delay: 0.5s;
+        }
+
+        h1 span:nth-child(12) {
+            -webkit-animation-delay: 0.6s;
+        }
+
+        h1 span:nth-child(13) {
+            -webkit-animation-delay: 0.7s;
+        }
+
+        h1 span:nth-child(14) {
+            -webkit-animation-delay: 0.8s;
+        }
+
+        /* ANIMATION */
+
+        @-webkit-keyframes bounce {
+            100% {
+                top: -20px;
+                text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+                0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+                0 50px 25px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+
+    </style>
+    <style>
         img {
             border-radius: 10%;
             margin-bottom: 20px;
@@ -71,107 +205,121 @@
 </head>
 
 <body>
+<div class="header">
+
+    <h1>
+        <span>T</span>
+        <span>o</span>
+        <span>T</span>
+        <span>o</span>
+        <span>L</span>
+        <span>i</span>
+        <span>f</span>
+        <span>e</span>
+    </h1>
+
+
+</div>
 <div id="wrapper">
-    <div id="header-wrapper2">
+    <div id="header-wrapper1">
         <div id="header" class="container">
-            <div id="logo">
-                <h1><a href="#">TotoLife</a></h1>
-
-            </div>
-
-
             <div id="menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-            <p></p>
-            <div id="logo">
-                <img alt="" src="" border-radius="0%">
+        </div>
 
-            </div>
 
-            <!--embedded video-->
+        <!--embedded video-->
+
+    </div>
+    <div id="featured-content">
+        <div id="intro">
+            <h3>
+                <img src="images/n1.png" alt="">
+            </h3>
 
         </div>
-        <div id="featured-content">
-            <div id="column2">
 
-                <video width="420" height="240" padding="10px" controls>
-                    <source src="video/numbers.mp4" type="video/mp4">
-                    <source src="video/numbers.mp4" type="video/ogg">
-                </video>
+        <div class="column1">
+            <video width="420" height="240" padding="10px" controls>
+                <source src="video/numbers.mp4" type="video/mp4">
+                <source src="video/numbers.mp4" type="video/ogg">
+            </video>
+            <h2 style="color: firebrick">Numbers for kids</h2>
 
-                <p></p>
-                <p></p>
-
-                <video width="420" height="240" padding="10px" controls>
-                    <source src="video/big numbers.mp4" type="video/mp4">
-                    <source src="video/big numbers.mp4" type="video/ogg">
-                </video>
-
-                <video width="420" height="240" padding="10px" controls>
-                    <source src="video/add.mp4" type="video/mp4">
-                    <source src="video/add.mp4" type="video/ogg">
-                </video>
-
-                <p></p>
-                <p></p>
-
-                <video width="420" height="240" padding="10px" controls>
-                    <source src="video/subtract.mp4" type="video/mp4">
-                    <source src="video/subtract.mp4" type="video/ogg">
-
-                </video>
-                <p></p>
-                <p></p>
-                <video width="420" height="240" padding="10px" controls>
-                    <source src="video/Times table.mp4" type="video/mp4">
-                    <source src="video/Times table.mp4" type="video/ogg">
-
-                </video>
-                <video width="420" height="240" padding="10px" controls>
-                    <source src="video/Times table2.mp4" type="video/mp4">
-                    <source src="video/Times table2.mp4" type="video/ogg">
-
-                </video>
-
-           </div>
-                <div id="column4">
-                    <h1 style="color: red">Numbers for kids</h1>
-                    <p><img src="images/img12.jpg" width="200" height="150" alt="" /></p>
-
-                    <p></p>
-                    <h1 style="color: green">1 to 100</h1>
-                    <p><img src="images/numbers.png" width="200" height="150" alt="" /></p>
-
-                    <p></p>
-                    <h1 style="color: firebrick">Fun addition song</h1>
-                    <p><img src="images/addition.jpg" width="200" height="150" alt="" /></p>
-
-                    <p></p>
-                    <h1 style="color: royalblue">Learn to subtract</h1>
-                    <p><img src="images/Subtraction.jpg" width="200" height="150" alt="" /></p>
-
-                    <p></p>
-                    <h1 style="color: lime">Learn the times table</h1>
-                    <p><img src="images/times table.jpg" width="200" height="150" alt="" /></p>
-
-                    <p></p>
-                    <h1 style="color: purple">More tables yaaay!</h1>
-                    <p><img src="images/times table2.jpg" width="200" height="150" alt="" /></p>
-                    
-                    <p class="button"><a href="index.html">Back</a></p>
-            </div>
         </div>
+
+        <div class="column4">
+
+            <video width="420" height="240" padding="10px" controls>
+                <source src="video/big numbers.mp4" type="video/mp4">
+                <source src="video/big numbers.mp4" type="video/ogg">
+            </video>
+
+            <h2 style="color: green">1 to 100</h2>
+
+        </div>
+
+        <div class="column1">
+
+            <video width="420" height="240" padding="10px" controls>
+                <source src="video/Add.mp4" type="video/mp4">
+                <source src="video/Add.mp4" type="video/ogg">
+            </video>
+            <h2 style="color: firebrick">Fun addition song</h2>
+
+        </div>
+
+        <div class="column4">
+            <video width="420" height="240" padding="10px" controls>
+                <source src="video/subtract.mp4" type="video/mp4">
+                <source src="video/subtract.mp4" type="video/ogg">
+            </video>
+            <h2 style="color: green">Learn to subtract</h2>
+
+        </div>
+
+        <div class="column1">
+            <video width="420" height="240" padding="10px" controls>
+                <source src="video/Times table.mp4" type="video/mp4">
+                <source src="video/Times table.mp4" type="video/ogg">
+            </video>
+            <h2 style="color: firebrick">Learn the times table</h2>
+
+        </div>
+
+        <div class="column4">
+            <video width="420" height="240" padding="10px" controls>
+                <source src="video/Times table2.mp4" type="video/mp4">
+                <source src="video/Times table2.mp4" type="video/ogg">
+            </video>
+            <h2 style="color: green">More tables yaaay!</h2>
+
+        </div>
+
+        <p></p>
+
+        <a href="">
+            <div class="edit">Press Me To Play 123 Game</div>
+        </a>
+    </div>
+
+    <div>
+        <p></p>
+
+        <h1 style="color: green" align="center">
+            <div class="goo" contenteditable="true">Lets Read Some Fun 123 Books</div>
+        </h1>
     </div>
 </div>
 <div id="footer">
-        <p>&copy; TotoLife. All rights reserved. 2019.</p>
-        </div>
+    <p>&copy; TotoLife. All rights reserved. 2019.</p>
+</div>
 
 
 </body>
