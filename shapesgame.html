@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Totolife</title>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Abel|Satisfy' rel='stylesheet' type='text/css'/>
+    
+    <link href="_css/jquery-ui.min.css" rel="stylesheet">
+<link href="_css/site.css" rel="stylesheet">
+
+    
+<meta charset="UTF-8">
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+<script>
+$(document).ready(function() {
+  	$('#shapes img').draggable({
+	revert : 'invalid',
+	start : function(event, ui){
+		ui.helper.css('transform', 'scale(1.8)');
+	},
+	stop : function (event, ui) {
+		ui.helper.css('transform', 'rotate(0deg) scale(1)');
+		},
+		zIndex : 100
+	});
+	$('#trashcan1').droppable({
+		activeClass : 'highlight',
+		accept: '.accept1',
+		drop : function (event, ui) {
+			ui.helper.hide('explode');
+			$(this).addClass("correct");
+		}
+		});
+		$('#trashcan2').droppable({
+		activeClass : 'highlight',
+		accept: '.accept2',
+		drop : function (event, ui) {
+			ui.helper.hide('explode');
+			$(this).addClass("correct");
+		}
+		});
+			$('#trashcan3').droppable({
+		activeClass : 'highlight',
+		accept: '.accept3',
+		drop : function (event, ui) {
+			ui.helper.hide('explode');
+			$(this).addClass("correct");
+		}
+		});
+		$('#trashcan4').droppable({
+		activeClass : 'highlight',
+		accept: '.accept4',
+		drop : function (event, ui) {
+			ui.helper.hide('explode');
+			$(this).addClass("correct");
+		}
+		});
+		$('#trashcan5').droppable({
+		activeClass : 'highlight',
+		accept: '.accept5',
+		drop : function (event, ui) {
+			ui.helper.hide('explode');
+			$(this).addClass("correct");
+		}
+		});
+		$('#trashcan6').droppable({
+		activeClass : 'highlight',
+		accept: '.accept6',
+		drop : function (event, ui) {
+			ui.helper.hide('explode');
+			$(this).addClass("correct");
+		}
+		});
+		
+}); // end ready
+</script>
+</head>
+<body>
+           
+<div class="wrapper">
+	<header>
+		Shapes Game:-)
+	</header>
+	<div class="content">
+		<div class="message">
+			<h1>Let's Play!! Pick a shape and drag it to its correct name in the box! When you finish click Back to Shapes and play more games!!</h1>
+		</div>
+		<div id="shapes">
+		  <img src="_images/small/square.gif" class="accept1">
+		  <img src="_images/small/circle.gif" class="accept2">
+		  <img src="_images/small/triangle.gif" class="accept3">
+		  <img src="_images/small/oval.gif" class="accept4">
+		  <img src="_images/small/rectangle.gif" class="accept5">
+		  <img src="_images/small/star.gif" class="accept6">
+		</div>
+        <div id="target_cont">
+            <div id="trashcan1" class="target"><p>square</p></div>
+            <div id="trashcan2" class="target"><p>circle</p></div>
+            <div id="trashcan3" class="target"><p>triangle</p></div>
+            <div id="trashcan4" class="target"><p>oval</p></div>
+            <div id="trashcan5" class="target"><p>rectangle</p></div>
+            <div id="trashcan6" class="target"><p>star</p></div>
+        </div>
+        <div id="menu">
+				<ul>
+					<li class="current_page_item"><a href="alphabt.html">Back to Shapes!</a></li>
+                    
+				</ul>
+			</div>
+	</div>
+	
+</div>
+</body>
+</html>
