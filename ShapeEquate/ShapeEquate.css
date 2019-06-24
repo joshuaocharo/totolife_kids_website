@@ -77,3 +77,47 @@ a {
     text-decoration: none;
     font-style: italic;
 }
+#menu {
+    float: right;
+    width: 500px;
+    height: 90px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#menu ul {
+    float: right;
+    margin: 0;
+    padding: 50px 0px 0px 0px;
+    list-style: none;
+    line-height: normal;
+}
+
+#menu li {
+    float: left;
+    padding: 0px 0px 0px 0px;
+}
+
+#menu a {
+    display: block;
+    margin-right: 1px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #12212F;
+    border: none;
+}
+
+#menu a:hover, #menu .current_page_item a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#menu .current_page_item a {
+    background: #132434;
+    border-radius: 5px;
+}
